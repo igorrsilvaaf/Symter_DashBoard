@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>SYMTER</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>DashBoard</title>
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./imagens/Ico72px.ico" alt="Logo principal">
+                    <h2>SYN<span class="danger">TER</span></h2>
+                </div> 
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp"> close </span>
+                </div>
+            </div>
+            <!--Inicio da barra lateral de iteracao-->
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp"> dashboard </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#" class="active">
+                    <span class="material-icons-sharp"> person_outline </span>
+                    <h3>Customers</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> receipt_long </span>
+                    <h3>Orders</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> insights </span>
+                    <h3>Analystics</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> mail_outline </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> inventory </span>
+                    <h3>Products</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> report_gmailerrorred </span>
+                    <h3>Reports</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> settings </span>
+                    <h3>Setings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp"> logout </span>
+                    <h3>logout</h3>
+                </a>
+
+            </div>
+        </aside>
+        <!-- Final da barra lateral-->
+
+        <main>
+            <h1>DashBoard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <!--Inicio das venda-->
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp"> analytics </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de vendas</h3>
+                            <h1>R$5.500,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+                <!--fim das vendas -->
+
+                <!--Inicio das despesas-->
+                <div class="expenses">
+                    <span class="material-symbols-sharp"> bar_chart </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de despesas</h3>
+                            <h1>R$160,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>15%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+                <!--fim das despesas -->
+
+                <!--Inicio renda-->
+                <div class="income">
+                    <span class="material-symbols-sharp"> stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Renda final</h3>
+                            <h1>R$5.340,00</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>90%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+                <!--fim renda -->
+            </div>
+            <!---Final insigghts--->
+
+            <!--Pedidos recentes-->
+            <div class="recent-orders">
+                <h2> Pedidos Recentes </h2>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Nome do produto</th>
+                          <th>Numero do pedido</th>
+                          <th>Forma de pagamento</th>
+                          <th>Status do pedido</th>
+                          <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <!--   <tr>
+                            <td>Teclado mecanico dazz</td>
+                            <td>45632</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-----------------Final MAIN--------------------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+
+                <div class="theme-toggler">
+                    <!-- Tema dark e ligth -->
+                    <span class="material-icons-sharp active"> light_mode </span>
+                    <span class="material-icons-sharp"> dark_mode </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Igor</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+
+                    <div class="profile">
+                        <img src="./imagens/Profile.png" class="ico" alt="perfil">
+                    </div>
+                </div>
+            </div>
+            <!--Fim Top-->
+
+            <div class="recent-updates">
+                <h2>Atualizações recentes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/Perfil2.png" id="perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>50 Cent</b> Enviou uma mensagem</p>
+                            <small class="text-muted">2 min</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/Perfil3.png" id="perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Djonga</b> Confirmou pagamento</p>
+                            <small class="text-muted">8 min</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/Perfil4.png" id="perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Pedrinho</b> Cancelou seu pedido</p>
+                            <small class="text-muted">12 min</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/Perfil5.png" id="perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Filipe Ret</b> Fez um novo pedido</p>
+                            <small class="text-muted">20 min</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./imagens/Perfil5.png" id="perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Filipe Ret</b> Cancelou o pedido</p>
+                            <small class="text-muted">20 min</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Fim pedidos recentes--->
+
+            <!--analise de compras-->
+            <!--Vendas online-->
+            <div class="sales-analytics">
+                <h2>Análise de vendas</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="rigth">
+                        <div class="info">
+                            <h3>Pedidos online</h3>
+                            <small class="text-muted">Ultimas 24 horas</small>
+                        </div>
+                        <h5 class="sucess"> +39% </h5>
+                        <h3>3845</h3>
+                    </div>
+                </div>
+                <!--Vendas offline-->
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="rigth">
+                        <div class="info">
+                            <h3>Pedidos offline</h3>
+                            <small class="text-muted">Ultimas 24 horas</small>
+                        </div>
+                        <h5 class="danger"> -19% </h5>
+                        <h3>100</h3>
+                    </div>
+                </div>
+                <!--Novos clientes-->
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="rigth">
+                        <div class="info">
+                            <h3>Novos clientes</h3>
+                            <small class="text-muted">Ultimas 24 horas</small>
+                        </div>
+                        <h5 class="sucess"> +25% </h5>
+                        <h3>200</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3> Adionar produtos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/orders.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
